@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>QuietHive_ExtractParasite</defName>
+    <label>attempt parasite extraction</label>
+    <description>Perform invasive surgery intended to remove an exposed Quiet Hive parasite.</description>
+    <jobString>extracting parasite from TargetA.</jobString>
+    <workerClass>Recipe_Surgery</workerClass>
+    <workAmount>1800</workAmount>
+    <anesthetize>true</anesthetize>
+    <surgerySuccessChanceFactor>0.85</surgerySuccessChanceFactor>
+    <researchPrerequisite>Medicine</researchPrerequisite>
+  </RecipeDef>
+</Defs>

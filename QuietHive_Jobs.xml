@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>QuietHive_CovertInfect</defName>
+    <driverClass>QuietHive.JobDriver_CovertInfect</driverClass>
+    <reportString>spending time with TargetA.</reportString>
+    <checkOverrideOnDamage>true</checkOverrideOnDamage>
+    <playerInterruptible>true</playerInterruptible>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+  <JobDef>
+    <defName>QuietHive_Lure</defName>
+    <driverClass>QuietHive.JobDriver_Lure</driverClass>
+    <reportString>chatting privately with TargetA.</reportString>
+    <playerInterruptible>true</playerInterruptible>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+  <JobDef>
+    <defName>QuietHive_LuredFollow</defName>
+    <driverClass>QuietHive.JobDriver_LuredFollow</driverClass>
+    <reportString>following TargetA.</reportString>
+    <playerInterruptible>true</playerInterruptible>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+  <JobDef>
+    <defName>QuietHive_Cover</defName>
+    <driverClass>QuietHive.JobDriver_Cover</driverClass>
+    <reportString>hanging around TargetA.</reportString>
+    <playerInterruptible>true</playerInterruptible>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+
+  <JobDef>
+    <defName>QuietHive_DoctorDeception</defName>
+    <driverClass>QuietHive.JobDriver_DoctorDeception</driverClass>
+    <reportString>examining TargetA.</reportString>
+    <playerInterruptible>true</playerInterruptible>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+  <JobDef>
+    <defName>QuietHive_AmbushAssist</defName>
+    <driverClass>QuietHive.JobDriver_AmbushAssist</driverClass>
+    <reportString>talking closely with TargetA.</reportString>
+    <playerInterruptible>true</playerInterruptible>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+  <JobDef>
+    <defName>QuietHive_HideInBed</defName>
+    <driverClass>QuietHive.JobDriver_HideInBed</driverClass>
+    <reportString>tidying a sleeping area.</reportString>
+    <playerInterruptible>true</playerInterruptible>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+  <JobDef>
+    <defName>QuietHive_RetrieveParasite</defName>
+    <driverClass>QuietHive.JobDriver_RetrieveParasite</driverClass>
+    <reportString>cleaning something up.</reportString>
+    <playerInterruptible>true</playerInterruptible>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+
+  <JobDef>
+    <defName>QuietHive_DestroyEvidence</defName>
+    <driverClass>QuietHive.JobDriver_DestroyEvidence</driverClass>
+    <reportString>cleaning up.</reportString>
+    <playerInterruptible>true</playerInterruptible>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+  <JobDef>
+    <defName>QuietHive_RescueExposed</defName>
+    <driverClass>QuietHive.JobDriver_RescueExposed</driverClass>
+    <reportString>helping TargetA.</reportString>
+    <playerInterruptible>true</playerInterruptible>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+
+  <JobDef>
+    <defName>QuietHive_PlantHiddenParasite</defName>
+    <driverClass>QuietHive.JobDriver_PlantHiddenParasite</driverClass>
+    <reportString>tidying something away.</reportString>
+    <playerInterruptible>true</playerInterruptible>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+</Defs>

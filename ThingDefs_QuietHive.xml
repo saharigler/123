@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="MoteBase">
+    <defName>QuietHive_ParasiteMote</defName>
+    <thingClass>Mote</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <graphicData>
+      <texPath>QuietHive/Parasite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(0.42,0.42)</drawSize>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.03</fadeInTime>
+      <solidTime>0.18</solidTime>
+      <fadeOutTime>0.22</fadeOutTime>
+    </mote>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>QuietHive_JuvenileParasite</defName>
+    <label>juvenile parasite</label>
+    <description>A small mobile parasite looking for a host. It is physically vulnerable while outside a host.</description>
+    <thingClass>QuietHive.Thing_JuvenileParasite</thingClass>
+    <category>Item</category>
+    <tickerType>Normal</tickerType>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>8</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>QuietHive/Parasite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.45,0.45)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>QuietHive_Evidence</defName>
+    <label>strange parasite residue</label>
+    <description>Shed skin, slime, or tissue left by a parasite transfer. Examining it may reveal what is spreading through the colony.</description>
+    <thingClass>QuietHive.Thing_QuietHiveEvidence</thingClass>
+    <category>Item</category>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>5</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>QuietHive/Parasite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.22,0.22)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>QuietHive_AdultParasite</defName>
+    <label>adult Quiet Hive parasite</label>
+    <description>An extracted adult parasite. It can be studied or contained, but should not be left unsecured.</description>
+    <thingClass>QuietHive.Thing_AdultParasite</thingClass>
+    <category>Item</category>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>20</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+      <Mass>0.15</Mass>
+    </statBases>
+    <graphicData>
+      <texPath>QuietHive/Parasite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.65,0.65)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>QuietHive_ContainmentPod</defName>
+    <label>parasite containment pod</label>
+    <description>A powered sealed pod intended to contain extracted Quiet Hive specimens.</description>
+    <thingClass>QuietHive.Building_QuietHiveContainment</thingClass>
+    <category>Building</category>
+    <tickerType>Rare</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.35</fillPercent>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToBuild>2800</WorkToBuild>
+      <Mass>25</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <basePowerConsumption>120</basePowerConsumption>
+      </li>
+    </comps>
+    <graphicData>
+      <texPath>Things/Building/Misc/AncientCryptosleepCasket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>QuietHive_ShedSkin</defName>
+    <label>shed parasite skin</label>
+    <description>A translucent fragment apparently shed by a small organism.</description>
+    <thingClass>QuietHive.Thing_QuietHiveEvidence</thingClass>
+    <category>Item</category><selectable>true</selectable><useHitPoints>true</useHitPoints>
+    <statBases><MaxHitPoints>3</MaxHitPoints><Flammability>1</Flammability></statBases>
+    <graphicData><texPath>QuietHive/Parasite</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(0.16,0.16)</drawSize></graphicData>
+  </ThingDef>
+  <ThingDef>
+    <defName>QuietHive_SlimeEvidence</defName>
+    <label>strange slime residue</label>
+    <description>A faint slick residue found where something small appears to have moved.</description>
+    <thingClass>QuietHive.Thing_QuietHiveEvidence</thingClass>
+    <category>Item</category><selectable>true</selectable><useHitPoints>true</useHitPoints>
+    <statBases><MaxHitPoints>2</MaxHitPoints><Flammability>0.5</Flammability></statBases>
+    <graphicData><texPath>QuietHive/Parasite</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(0.12,0.12)</drawSize></graphicData>
+  </ThingDef>
+  <ThingDef>
+    <defName>QuietHive_DeadJuvenile</defName>
+    <label>dead juvenile parasite</label>
+    <description>An intact but dead juvenile parasite. Strong physical evidence of an infestation.</description>
+    <thingClass>QuietHive.Thing_QuietHiveEvidence</thingClass>
+    <category>Item</category><selectable>true</selectable><useHitPoints>true</useHitPoints>
+    <statBases><MaxHitPoints>4</MaxHitPoints><Flammability>0.8</Flammability></statBases>
+    <graphicData><texPath>QuietHive/Parasite</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(0.28,0.28)</drawSize></graphicData>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>QuietHive_HiddenParasite</defName>
+    <label>hidden juvenile parasite</label>
+    <description>A juvenile parasite concealed in a sleeping area or other hiding place.</description>
+    <thingClass>QuietHive.Thing_HiddenParasite</thingClass>
+    <category>Item</category>
+    <tickerType>Normal</tickerType>
+    <selectable>false</selectable>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>5</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>QuietHive/Parasite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.10,0.10)</drawSize>
+    </graphicData>
+  </ThingDef>
+</Defs>

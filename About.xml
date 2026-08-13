@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Quiet Hive</name>
+  <author>OpenAI + Sahar</author>
+  <packageId>openai.sahar.quiethive</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>A hidden-parasite infection that tries to spread without raising suspicion. Infected pawns maintain normal colony life, lure victims into private areas, coordinate with hive members, evade early medical tests, and can be discovered and surgically treated.</description>
+</ModMetaData>

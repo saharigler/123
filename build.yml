@@ -1,0 +1,24 @@
+name: Build Quiet Hive
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Restore and build
+        run: dotnet build QuietHive/Source/QuietHive/QuietHive.csproj -c Release
+      - name: Package mod
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force QuietHive/Assemblies | Out-Null
+          Compress-Archive -Path QuietHive -DestinationPath QuietHive_RimWorld_1.6.zip -Force
+      - uses: actions/upload-artifact@v4
+        with:
+          name: QuietHive-RimWorld-1.6
+          path: QuietHive_RimWorld_1.6.zip
